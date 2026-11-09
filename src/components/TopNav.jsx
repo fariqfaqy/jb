@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { Globe } from 'lucide-react';
 import jubaktiPhoto from '../assets/jubakti.jpg';
 
-export default function TopNav({ activeSlide, setActiveSlide, lang, setLang, portfolioData }) {
+export default function TopNav({ activeSlide, setActiveSlide, lang, setLang, onOpenCvModal, portfolioData }) {
   const navItems = [
     { id: 'profile', label: lang === 'en' ? 'PROFILE' : 'PROFIL' },
     { id: 'project', label: lang === 'en' ? 'PUBLICATIONS' : 'PUBLIKASI' },
