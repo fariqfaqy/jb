@@ -513,7 +513,10 @@ export default function ProjectSlide({ lang, portfolioData, onOpenSimulatorModal
             justifyContent: 'center',
             marginTop: '0.15rem',
             perspective: '1200px',
-            userSelect: 'none'
+            userSelect: 'none',
+            WebkitUserSelect: 'none',
+            WebkitTouchCallout: 'none',
+            touchAction: 'pan-y'
           }}
         >
           {/* Navigation Button: Previous (<) */}
@@ -625,6 +628,13 @@ export default function ProjectSlide({ lang, portfolioData, onOpenSimulatorModal
                     zIndex: zIndex,
                     cursor: 'pointer',
                     userSelect: 'none',
+            WebkitUserSelect: 'none',
+            WebkitTouchCallout: 'none',
+            touchAction: 'pan-y',
+                    WebkitUserSelect: 'none',
+                    WebkitTouchCallout: 'none',
+                    WebkitTapHighlightColor: 'transparent',
+                    touchAction: 'manipulation',
                     display: 'flex',
                     flexDirection: 'column'
                   }}

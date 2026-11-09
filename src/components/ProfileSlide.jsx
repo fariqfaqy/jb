@@ -165,7 +165,10 @@ export default function ProfileSlide({ lang, portfolioData, onOpenCvModal }) {
                   background: '#ffffff',
                   border: '1px solid rgba(226, 232, 240, 0.95)',
                   boxShadow: '0 14px 34px -8px rgba(15, 23, 42, 0.09), 0 2px 8px rgba(15, 23, 42, 0.03)',
-                  padding: '1.35rem 1.45rem 1.25rem'
+                  padding: '1.35rem 1.45rem 1.25rem',
+                  userSelect: 'none',
+                  WebkitUserSelect: 'none',
+                  WebkitTouchCallout: 'none'
                 }}
               >
                 {/* ENLARGED CIRCULAR AVATAR FRAME */}

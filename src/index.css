@@ -54,10 +54,43 @@
   --radius-full: 9999px;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Disable unwanted blue tap highlight & accidental text selection on cards, buttons, and mobile touches */
+.presentation-slide,
+.soft-card,
+button,
+a,
+img,
+video,
+[role="button"],
+.nav-capsule-btn,
+.btn,
+.video-background-container {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  touch-action: manipulation;
+}
+
+/* Subtle selection color for readable text */
+::selection {
+  background: rgba(56, 189, 248, 0.2);
+  color: inherit;
+}
+::-moz-selection {
+  background: rgba(56, 189, 248, 0.2);
+  color: inherit;
 }
 
 html {
